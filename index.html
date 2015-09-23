@@ -1,0 +1,31 @@
+<html ng-app="myWetherApp">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<body>
+
+<div ng-controller="myWetherCtrl">
+
+<h2>My Wether App</h2>
+<p> 
+Latitude : <input type="number" ng-init="location.lati=24.91" ng-model="location.lati"><br/>
+Longitude : <input type="number" ng-init="location.longi=67.08" ng-model="location.longi"><br/>
+</p>
+
+<p>
+<button ng-click="fetch(location)">Fetch </button>
+</p>
+
+Place <h2>{{place}}</h2>
+sunrise  <h2>{{sunrise }}</h2>
+sunset  <h2>{{sunset }}</h2>
+temp  <h2>{{temp }}</h2>
+pressure  <h2>{{pressure }}</h2>
+humidity  <h2>{{humidity }}</h2>
+temp_min <h2>{{temp_min}}</h2>
+temp_max <h2>{{temp_max}}</h2>
+</div>
+<script src="angular.js"></script>
+<script src="myWetherApp.js"></script>
+<script src="myWetherCtrl.js"></script>
+
+</body>
+</html>
